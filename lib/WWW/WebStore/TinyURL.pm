@@ -26,7 +26,7 @@ use strict;
 use Exporter;
 use Carp qw(croak cluck confess carp);
 
-use vars qw($VERSION);
+use vars qw($VERSION $DEBUG);
 
 $VERSION = '0.01' || sprintf('%d', q$Revision$ =~ /(\d+)/g);
 $DEBUG = $ENV{DEBUG} ? 1 : 0;
@@ -56,6 +56,15 @@ WWW::WebStore::TinyURL - Store data and files in TinyURLs
 
  use strict;
  use WWW::WebStore::TinyURL
+ 
+ my $store = WWW::WebStore::TinyURL->new("shopping_list.txt");
+ my $url = $store->url;
+ my $shopping_list = $store->retrieve;
+ 
+ my $store2 = WWW::WebStore::TinyURL->new("http://www.tinyurl.com/df97u");
+ my $data2 = $store->retrieve;
+ 
+ my $data3 = WWW::WebStore::TinyURL->new($url)->retrieve;
  
 =head1 DESCRIPTION
 
