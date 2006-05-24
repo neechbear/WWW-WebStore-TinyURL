@@ -11,3 +11,5 @@ t/11pod_coverage.t
 t/20compile.t
 t/30store_data.t
 TODO
+Makefile.PL
+README

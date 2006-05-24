@@ -177,6 +177,10 @@ WWW::WebStore::TinyURL - Store data and files in TinyURLs
  
 =head1 DESCRIPTION
 
+WWW::WebStore::TinyURL will allow you to store data or small files
+within a I<Tiny URL>, and retrieve it again at a later date using the
+I<Tiny URL> as a key.
+
 =head1 METHODS
 
 =head2 new
@@ -185,13 +189,22 @@ WWW::WebStore::TinyURL - Store data and files in TinyURLs
  my $store = WWW::WebStore::TinyURL->new("/var/tmp/filename.foo");
  my $store = WWW::WebStore::TinyURL->new(\$data);
 
+Creates a new store object. Accepts a single argument which can be
+a I<Tiny URL> (in order to retrieve data from a previously stored object),
+a filename or a scalar reference to a string (which will be stored in a
+I<Tiny URL>.
+
 =head2 url
 
  my $tinyurl = $store->url;
 
+Return the I<Tiny URL> or the stored object.
+
 =head2 data
 
  my $data = $store->data;
+
+Return the data from the stored object.
 
 =head1 VERSION
 
