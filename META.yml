@@ -1,0 +1,20 @@
+---
+name: WWW-WebStore-TinyURL
+version: 0.01
+author:
+  - Nicola Worthington <nicolaw@cpan.org>
+abstract: Store data and files in TinyURLs
+license: open_source
+requires:
+  Carp: 0
+  LWP::UserAgent: 0
+recommends:
+  Test: 0
+  Test::More: 0
+  Test::Pod: 0
+  Test::Pod::Coverage: 0
+provides:
+  WWW::WebStore::TinyURL:
+    file: lib/WWW/WebStore/TinyURL.pm
+    version: 0.01
+generated_by: Module::Build version 0.2611

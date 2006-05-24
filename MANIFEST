@@ -1,0 +1,13 @@
+Build.PL
+Changes
+INSTALL
+lib/WWW/WebStore/TinyURL.pm
+LICENSE
+MANIFEST			This list of files
+META.yml
+NOTICE
+t/10pod.t
+t/11pod_coverage.t
+t/20compile.t
+t/30store_data.t
+TODO
