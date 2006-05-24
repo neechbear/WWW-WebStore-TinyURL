@@ -48,7 +48,7 @@ sub new {
 	my $input = shift;
 
 	# Barf on naff paramaters
-	croak "No paramater passed when filename or scalar reference or 'Tiny URL' was expected"
+	croak "No paramater passed when filename or scalar reference or 'TinyURL' was expected"
 		unless defined $input;
 	croak "Paramater '$input' is not a valid filename"
 		if !ref($input) && !_isTinyURL($input) && !-f $input;
@@ -178,8 +178,8 @@ WWW::WebStore::TinyURL - Store data and files in TinyURLs
 =head1 DESCRIPTION
 
 WWW::WebStore::TinyURL will allow you to store data or small files
-within a I<Tiny URL>, and retrieve it again at a later date using the
-I<Tiny URL> as a key.
+within a I<TinyURL>, and retrieve it again at a later date using the
+I<TinyURL> as a key.
 
 =head1 METHODS
 
@@ -190,15 +190,15 @@ I<Tiny URL> as a key.
  my $store = WWW::WebStore::TinyURL->new(\$data);
 
 Creates a new store object. Accepts a single argument which can be
-a I<Tiny URL> (in order to retrieve data from a previously stored object),
-a filename or a scalar reference to a string (which will be stored in a
-I<Tiny URL>.
+a I<TinyURL> (in order to retrieve data from a previously stored object),
+or a filename or a scalar reference to a string (which will be stored in a
+I<TinyURL>).
 
 =head2 url
 
  my $tinyurl = $store->url;
 
-Return the I<Tiny URL> or the stored object.
+Return the I<TinyURL> of the stored object.
 
 =head2 data
 
