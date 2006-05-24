@@ -16,6 +16,7 @@ $build = Module::Build->new(
 		requires => {
 			'Carp'           => 0, # 1.04
 			'LWP::UserAgent' => 0,
+			'File::Slurp'    => 0,
 		},
 
 		recommends => {

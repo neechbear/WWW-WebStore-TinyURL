@@ -224,6 +224,12 @@ This software is licensed under The Apache Software License, Version 2.0.
 
 L<http://www.apache.org/licenses/LICENSE-2.0>
 
+=head1 DISCLAIMER
+
+At the time of writing this software does not break www.tinyurl.com's
+terms of use. However, don't coming running to me if you use this module
+inappropriately and get told off. :)
+
 =cut
 
 __END__
